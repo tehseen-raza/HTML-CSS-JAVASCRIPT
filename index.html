@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <style>
+        body {
+            background-color: rgb(136, 127, 127);
+        }
+        .slider{
+            margin-top: 20%;
+            margin-left: 20%;
+        }
+        .form-control-range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 144px;
+            height: 1.5px;
+            outline: none;
+            background-color: #ddd;
+        }
+        .form-control-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            border: 1.5px solid #F6821F;
+            width: 11px;
+            height: 11px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+        .form-control-range::-webkit-slider-thumb:hover {
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+        .form-control-range::-webkit-slider-thumb:active { 
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <input type="range" class="form-control-range" min="1" max="100" step="1" id="asset_formRange">
+    </div>
+</body>
+
+</html>
